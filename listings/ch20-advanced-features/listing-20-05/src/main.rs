@@ -2,7 +2,7 @@
 fn split_at_mut(values: &mut [i32], mid: usize) -> (&mut [i32], &mut [i32]) {
     let len = values.len();
 
-    assert!(mid <= len);
+    assert!(mid < len);
 
     (&mut values[..mid], &mut values[mid..])
 }
